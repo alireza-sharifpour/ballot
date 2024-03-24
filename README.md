@@ -29,3 +29,19 @@ ALCHEMY_API_KEY=your_alchemy_api_key
 PRIVATE_KEY=your_private_key
 ```
 
+
+## Usage
+
+The project includes scripts for interacting with the `Ballot` contract:
+
+- **Deploy Contract:** Deploy the `Ballot` contract to the Ethereum testnet.
+- **Cast Vote (`CastVote.ts`):** Cast a vote for a specific proposal.
+- **Delegate Vote (`DelegateVote.ts`):** Delegate voting power to another address.
+- **Give Right to Vote (`GiveRightToVote.ts`):** Grant a voter the right to participate in the ballot.
+
+### Example: Casting a Vote
+
+```
+npx ts-node --files ./scripts/CastVote.ts <ContractAddress> <ProposalIndex>
+```
+
